@@ -1,0 +1,77 @@
+% Pandoc使用概要
+% Markdown語法
+% Oct 14, 2014
+
+# 第一份檔案
+
+## 轉檔 (action.bat)
+
+~~~~~~ {#pandoc .txt .numberLines startFrom="1"}
+set file=01 02
+set outf=result
+
+pandoc -o %outf%.html ^
+       -t html5 ^
+       -s -S ^
+       --toc ^
+       -c pandoc.css ^
+       -A footer.html ^
+       --mathjax ^
+       %file%
+
+pause
+
+rem    註解：以下效果不好，要修改pandoc.css。
+rem    -s --highlight-style zenburn -S ^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+## 內文
+
+### 換行
+
+| 這是第一行
+| 這是第二行
+| 第三行
+
+### 文字效果
+
+| 這是**粗體**效果
+| 這是~~刪除線~~效果
+
+### 條列 (無序，寬鬆)
+
+- 第一項
+
+- 第二項
+
+    - 第a項
+
+    - 第b項
+
+<!--end of list-->
+
+### 條列 (無序，緊湊)
+
+- 第一項
+- 第二項
+    - 第a項
+    - 第b項
+
+<!--end of list-->
+
+**ps**: 換section會自動斷掉編號，`<!--end of list-->`{.html}可加可不加!
+
+### 條列 (有序，類型一)
+
+1. 第一項
+2. 第二項
+    a. 第a項
+    b. 第b項
+
+### 條列 (有序，類型二：寫法不同，效果相同)
+
+#. 第1項
+#. 第2項
+    #. 第1項
+    #. 第2項
+

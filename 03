@@ -1,0 +1,56 @@
+# 第三份檔案
+
+## 連結
+
+### 直接連結
+
+| 語法：`<https://www.google.com.tw>`{.txt}
+| <https://www.google.com.tw>
+|
+| 語法：`<qylyui@gmail.com>`{.txt}
+| <qylyui@gmail.com>
+
+### 內文連結
+
+| 目的地設id：`{#idname}`(通常用在標題，且\#後面沒有空格！)
+| 欲連結用()：`[文字](#idname)`
+|
+| 也可以用**註解**方式：
+| `[文字]`{.txt}...
+| ...
+| `[文字]: #idname`{.txt}
+
+### 超連結
+
+| 語法：`[文字]: /url "title"`
+|
+| 或用註解方式：
+| `[文字]`{.txt}...
+| ...
+| `[文字]: /url "title"`{.txt}
+
+## 圖片
+
+| 語法：`![說明](/url)` (會放在`<figure>區塊`{.html}中)
+|
+| 放在內文：`![說明](/url)\` (尾端加上反斜線)
+
+例如這樣：![logo](./logo.jpg)\。
+
+**ps**: 要縮放直接使用html標籤及其屬性！
+
+## 註解
+
+| ...[^idname]...
+| ...
+| [^idname]: 說明
+
+## 表格
+
+1. 直接用html標籤：`<table>`{.html}、`<tr>`{.html}、`<td>`{.html}等。
+2. 線上表格產生器：
+    - <http://www.tablesgenerator.com/html_tables>
+
+**ps**：Markdown表格沒辦法調整字型大小！
+
+

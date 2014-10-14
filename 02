@@ -1,0 +1,31 @@
+# 第二份檔案
+
+## 數學
+
+
+If $ax^2+bx+c=0$ with $a≠0$, then:
+
+$$x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
+
+## 程式碼
+
+### C++ (程式區塊)
+
+~~~~~~ {#cppcode .cpp .numberLines startFrom="1"}
+#include <iostream>
+
+using namespace std;
+
+void main(int argc, char * argv[]) {
+    cout << "Hello, world" << endl;
+}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+| 內文引用：`#include <iostream>`{.cpp}。
+| 繼續用：`using namespace std;`{.cpp}。
+
+### Java (Servlet/JSP暫記：命令列產生模板頁)
+
+~~~~~~ {#javanote .java .numberLines startFrom="1"}
+Process p = new ProcessBuilder("myCommand", "myArg").start();
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
