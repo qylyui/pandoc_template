@@ -42,8 +42,8 @@ pandoc -o $outf.html \
 
 pause
 
-rem    註解：以下效果不好，要修改pandoc.css。
-rem    -s --highlight-style zenburn -S ^
+#    註解：以下效果不好，要修改pandoc.css。
+#    -s --highlight-style zenburn -S ^
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ## 其餘Markdown語法
